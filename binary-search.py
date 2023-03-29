@@ -17,12 +17,11 @@
 # nums is sorted in ascending order.
 
 # Pseudocode solution
-
 class Solution:
     """
     Has two pointers, a low and high.
     """
-    def binary_search(self, nums: List[int], target:int) -> int:
+    def binary_search(self, nums: list[int], target:int) -> int:
         # bottom pointer 
         low = 0
         # top pointer
@@ -46,3 +45,7 @@ class Solution:
                 high = mid - 1
         #if the while loop statement is met, then target is simply not in the list
         return -1
+
+sol = Solution()
+print(sol.binary_search([-1,0,3,5,9,12], 2))
+print(sol.binary_search([-1,0,3,5,9,12], 9))
