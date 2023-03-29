@@ -23,9 +23,26 @@ class Solution:
     Has two pointers, a low and high.
     """
     def binary_search(self, nums: List[int], target:int) -> int:
+        # bottom pointer 
         low = 0
+        # top pointer
         high = len(nums)-1
+        # loops until the pointers meet
         while low <= high:
+            # mid changes depending on where low and high are
             mid = (low+high)//2
+            # if found essentially
             if target == nums[mid]:
+                # returns solution
                 return mid
+            # if target is greater than middle number 
+            elif target > nums[mid]:
+                # set low to the middle point, creating a new mid when the loop runs again. 
+                # adds one since we know mid is not the target
+                low = mid + 1
+            # if target is less than middle number
+            else:
+                # set high to mid point minus one since mid is not target
+                high = mid - 1
+        #if the while loop statement is met, then target is simply not in the list
+        return -1
