@@ -19,7 +19,8 @@
 # Pseudocode solution
 class Solution:
     """
-    Has two pointers, a low and high.
+    Has two pointers, a low and high. 
+    Preforms binary search when given list and target.
     """
     def binary_search(self, nums: list[int], target:int):
         # bottom pointer 
