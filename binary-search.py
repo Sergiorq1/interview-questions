@@ -21,7 +21,7 @@ class Solution:
     """
     Has two pointers, a low and high.
     """
-    def binary_search(self, nums: list[int], target:int) -> int:
+    def binary_search(self, nums: list[int], target:int):
         # bottom pointer 
         low = 0
         # top pointer
