@@ -4,7 +4,7 @@
 class Solution:
     def searchInsert(self, nums: list[int], target: int):
         """
-        Binary search is O(log(n)), so I'm going to try that and implement insersion
+        Binary search is O(log(n)), so I'm going to try that and implement insertion
         """
         # Define both pointers
         left, right = 0, len(nums)
@@ -16,9 +16,9 @@ class Solution:
             # if midpoint is less than target
             if nums[midpoint] < target:
                 # move left pointer to midpoint plus one over
-                # this left point is only moved if for certain that
-                #the target is not ending up to the left of it, unlike regular binary search.
-                #this makes it slightly less efficient than regular binary search, but it has the ability ot 
+                # this left point is only moved if for certain that ->
+                # the target is not ending up to the left of it, unlike regular binary search.
+                # this makes it slightly less efficient than regular binary search, but it has the ability ot 
                 left = midpoint + 1
             else:
                 # right pointer is moved to midpoint
