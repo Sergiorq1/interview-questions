@@ -34,11 +34,11 @@ class Solution:
             # the left_over is the value left over when subtracting target from value
             # basically left_over is a target within a target
             left_over = target - value
-            # if left_over exist in dictionary
+            # if left_over exist in dictionary (checking keys)
             if left_over in values:
                 # return value by looking up a key and returning the value and index in a list 
                 return [values[left_over], index]
-            # adds a key and 
+            # adds a key(vale) and value (index)
             #This takes O(1) time complexity
             values[value] = index
         return []
