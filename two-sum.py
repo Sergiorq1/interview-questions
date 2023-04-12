@@ -38,7 +38,7 @@ class Solution:
             if left_over in values:
                 # return value by looking up a key and returning the value and index in a list 
                 return [values[left_over], index]
-            # adds a key(vale) and value (index)
+            # adds a key(value) and value (index)
             #This takes O(1) time complexity
             values[value] = index
         return []
