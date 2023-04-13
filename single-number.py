@@ -13,7 +13,7 @@ class Solution:
         #     res ^= num
         # return res
 
-        # Dictonary solution
+        # Dictionary solution
 
         #declare a dictionary
             #serves the function of later checking if current value exists as a key
