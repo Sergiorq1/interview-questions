@@ -25,6 +25,9 @@ class Solution:
             #traverse list
             head = head.next
         # divide n by 2 if n is even. Else, k equals ceiling of n/2
-        k = length_linked // 2 if length_linked % 2 else ceil(length_linked/2)
+        k = length_linked // 2 if length_linked % 2 else (length_linked//2)+1
         #return the list with index being half length of list 
         return linked_into_list[k]
+    
+sol = Solution()
+sol.middleNode([1,2,3,4,5])
