@@ -13,7 +13,8 @@ class Solution:
         #convert list into set, 
         #set removes duplicate in list, so if is a good way to indicate differencess between the two lists
         setList = set(nums)
-        if len(setList) == len(nums):
+        if len(setList) == len(nums): #O(1)
             return False
         else:
             return True
+    # O(1)

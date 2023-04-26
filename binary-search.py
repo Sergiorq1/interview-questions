@@ -22,6 +22,8 @@ class Solution:
     Has two pointers, a low and high. 
     Preforms binary search when given list and target.
     """
+
+# [-1,0,3,5,9,12], 2
     def binary_search(self, nums: list[int], target:int):
         # bottom pointer 
         low = 0
@@ -46,6 +48,7 @@ class Solution:
                 high = mid - 1
         #if the while loop statement is met, then target is simply not in the list
         return -1
+# Time complexity: O(log(n)) if sorted
 
 sol = Solution()
 print(sol.binary_search([-1,0,3,5,9,12], 2))
