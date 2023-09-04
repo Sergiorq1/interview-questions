@@ -22,8 +22,9 @@ class Solution:
             # only div. by 5
             elif num % 5 == 0:
                 res.append('Buzz')
-            # niether divisiblie by 3 or 5
+            # neither divisible by 3 or 5
             else:
                 res.append(str(num))
         # return list
         return res
+    # O(n)

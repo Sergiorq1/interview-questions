@@ -36,5 +36,6 @@ def closest_nums(nums1, nums2, t):
       end_2 -= 1
   # return the closest pair
   return list(closest_pair)
+ # O(n)
 
 print(closest_nums([9, 13, 1, 8, 12, 4, 0, 5],[3, 17, 4, 14, 6],20))

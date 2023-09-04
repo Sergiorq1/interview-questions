@@ -1,0 +1,18 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        # 1221, 12221, 12321, 
+        #go backwards and forwards, if have to check both times till middle point,
+        #O(n)
+        #O(n/2) -> check if first half is the same as backward second hald with == operator 
+        len_x = len(str(x))
+        if x < 0:
+            return False
+        x = str(x)
+        if len(x) == 1:
+            return True
+        first_half = x[:len_x//2]
+        second_half_rev = x[:-(len_x//2)-1:-1]
+        if first_half == second_half_rev:
+            return True
+        else:
+            return False
